@@ -1,0 +1,11 @@
+[Unit]
+Description=bme280 and health script
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/health_check_bme280.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+
