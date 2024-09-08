@@ -1,5 +1,6 @@
 ヘルスチェック用クライアント  
 pyを/usr/local/bin/にコピー  
+configを/usr/local/etc/にコピー  
 .serviceを/usr/lib/systemd/system/　に配置  
 ```
 systemctl daemon-reload  
