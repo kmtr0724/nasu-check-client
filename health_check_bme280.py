@@ -20,7 +20,7 @@ digH = []
 
 t_fine = 0.0
 
-appsetting = json.load(open('config.json', 'r'))
+appsetting = json.load(open('/usr/local/etc/config.json', 'r'))
 target_server = appsetting["url"]
 username = appsetting["user"]
 password = appsetting["pass"]
@@ -175,10 +175,4 @@ get_calib_param()
 while True:
     readData() 
     time.sleep(60)
-
-if __name__ == '__main__':
-    try:
-        readData()
-    except KeyboardInterrupt:
-        pass
 
